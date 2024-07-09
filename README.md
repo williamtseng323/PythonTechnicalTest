@@ -1,5 +1,5 @@
 # Centerline Python Technical Test
-This repository serves as a python technical test for the role - Centerline Trading Analyst.
+This repository serves as a python technical test for the role - Centerline Trading Analyst. <br>
 Solely developed by TSENG, Wai Yin
 
 # Development Environment and Required Python Version
@@ -62,5 +62,9 @@ Example `config.json`:
             "column_names":["price_type"]
         }
     }
-
 }
+```
+# Optimization
+There are two optimizations I applied. 
+1. I used **multi-threading** to manage different folders simultaneously. Parallel programming not used as to reserve system resources.
+2. I applied **hash set** to achieve an average **O(1)** search for whether an appeared file belongs to our watchlist. Compared to linear search O(n) or binary search O(log n), I gave up all the unnecessary information in exchange for efficiency. Low level optimization is not economical due to the nature of Python.

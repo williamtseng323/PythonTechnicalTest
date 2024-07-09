@@ -53,7 +53,7 @@ def monitor_directory(directory, monitor_files, interval, check_period):
     :param interval: Interval between checks
     :param check_period: Total time to monitor the directory
     """
-    monitor_files_set = set(monitor_files)
+    monitor_files_set = set(monitor_files) # Hash Set for O(1) lookup time
     start_time = time.time()
     try:
         while time.time() - start_time < check_period:
