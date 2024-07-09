@@ -88,10 +88,10 @@ def notify_user(directory, file):
     notification_title = "File Alert"
     notification_message = f"The file '{file}' has appeared in '{directory}'"
     
-    if platform.system() == "Darwin":  # macOS
+    if platform.system() == "Darwin":  # macOS case is handled
         command = f'display notification "{notification_message}" with title "{notification_title}"'
         subprocess.run(["osascript", "-e", command])
-    else:
+    else: # windows case is handled
         try:
             from plyer import notification
             notification.notify(
