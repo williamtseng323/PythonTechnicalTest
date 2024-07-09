@@ -9,8 +9,8 @@
     ],
     "log_directory": "logs",
     "params": {
-        "check_interval": 1,
-        "check_period": 30
+        "check_interval": 0.1,
+        "check_period": 10
     },
     "dataframes": {
         "example_df": {
