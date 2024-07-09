@@ -1,0 +1,22 @@
+{
+    "monitor_directories": [
+        "monitor_directory_1",
+        "monitor_directory_2"
+    ],
+    "monitor_files": [
+        "monitor_file_1.txt",
+        "monitor_file_2.csv"
+    ],
+    "log_directory": "logs",
+    "params": {
+        "check_interval": 1,
+        "check_period": 30
+    },
+    "dataframes": {
+        "example_df": {
+            "columns": ["col1", "col2"],
+            "index": [0, 1],
+            "data": [["1", "2"], ["3", "4"]]
+        }
+    }
+}

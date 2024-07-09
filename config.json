@@ -1,0 +1,24 @@
+{
+    "monitor_directories": [
+        "monitor_directory_1",
+        "monitor_directory_2"
+    ],
+    "monitor_files": [
+        "monitor_file_1.txt",
+        "monitor_file_2.csv"
+    ],
+    "log_directory": "logs",
+    "params": {
+        "check_interval": 1,
+        "check_period": 30
+    },
+    "dataframes": {
+        "example_df": {
+            "columns": ["open", "high","low","close","volume"],
+            "index": [0, 1],
+            "data": [[1.1,1.2,1.0,1.05,10000], [1.05,1.1,0.9,0.95,20000]],
+            "index_names":["ohlc_id"],
+            "column_names":["price_type"]
+        }
+    }
+}
