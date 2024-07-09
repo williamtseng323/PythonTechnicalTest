@@ -18,14 +18,21 @@ It was developed in Python 3.10.4 and should work for Python 3.10.x
     pip install -r requirements.txt
     ```
 
-### Monitoring Program
+## Main Feature: Monitoring Program
 
 The monitoring program observes the specified directories for the appearance of specific files and logs these activities.
 
 1. The monitoring program is executed, specify the path to config file (mandatory):
     ```sh
-    python main.py config.json
+    python -u main.py config.json
     ```
+## Logs
+The log records the appearance of the files and timestamps. They are typically stored in logs unless you specified another location to store these logs.
+### Sample Logs
+
+- 2024-07-09 21:24:46,226 - INFO - File monitor_file_1.txt appeared in directory monitor_directory_2
+- 2024-07-09 21:24:48,235 - INFO - File monitor_file_2.csv appeared in directory monitor_directory_1
+
 ## Configuration File
 
 The configuration for the monitoring program is stored in a `config.json` file. The configuration includes:
